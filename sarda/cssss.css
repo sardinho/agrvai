@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    overflow: hidden;
+}
+
+img {
+    width: 400px;
+    height: auto;
+    margin-top: 80px;
+}
+
+button {
+    width: 250px;
+    background-color: black;
+    color: white;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    background: linear-gradient(145deg, rgb(13, 60, 190), rgb(22, 123, 231));
+    border: none;
+    box-shadow: 0 0 20px rgb(12, 76, 196);
+    transition: 0.3s;
+}
+
+#pos:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 60px rgb(1, 90, 255);
+    transition: 0.5s;
+}
+
+.botoes {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: -30px;
+}
+
+video {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+    z-index: -1;
+    opacity: 0.4;
+}

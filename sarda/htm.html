@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aceita pfv</title>
+    <link rel="stylesheet" href="cssss.css">
+</head>
+<body>
+    <img src="./mendigo-pica-pau.webp" alt="">
+    <h1 style="color: rgb(255, 26, 167); font-size: 64px; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; letter-spacing: 0.5px; font-weight: 400; translate: 0 -50px; text-shadow: 0 0 8px black;">Olá, linda</h1>
+    <p style="color: white; font-size: 32px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; translate: 0 -55px; font-weight: 700; text-shadow: 0 0 6px black; text-align: center;">O senhoria poderia, por gentileza,<br> me enamorar?</p>
+    <div class="botoes">
+
+        <a href="agr foi/ememe.html"><button id="pos" style="cursor: pointer;">CLARO, MEU AMOR</button></a>
+        <button id="neg" style="background: linear-gradient(145deg, rgb(219, 5, 5), rgb(249, 65, 65)); box-shadow: 0 0 20px rgb(255, 0, 0);">NÃO</button>
+
+    </div>
+
+    <video src="" autoplay loop></video>
+
+    <script>
+
+        const botao = document.querySelector('#neg');
+        
+        let moveX = 0;
+        let moveY = 0;
+        
+        botao.addEventListener("mouseover", function () {
+            moveX = (Math.random() * 801 - 400); //gera um número entre -400 e 400 para atribuir ao movimento no eixo X do botão (esse valor é ideal pro botão não sumir da tela nessas proporções desse código, mas pode mudar conforme você faça sua tela)
+            moveY = (Math.random() * 401 - 400); //aqui é o mesmo esquema de random, mas é de -400 a 0, respeitando o valor pra não sumir da tela, que acaba tendo um limite diferente do eixo X
+        
+            botao.style.transform = `translate(${moveX}px, ${moveY}px)`; //atribui os valores randomicos ao botão aplicando um translate no css dele
+        })
+        
+    </script>
+    
+</body>
+</html>
